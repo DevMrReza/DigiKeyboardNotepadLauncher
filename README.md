@@ -114,7 +114,4 @@ You are responsible for all actions performed using this code.
 
 <div align="center">
 
-### 🤝 Created for Ethical Hacking & Learning  
-**Stay Safe • Stay Ethical • Stay Smart 🔐**
-
 </div>
