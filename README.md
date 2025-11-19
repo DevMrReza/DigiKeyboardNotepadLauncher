@@ -1,33 +1,120 @@
-# DigiKeyboard Notepad Launcher
+<div align="center">
 
-This project is a simple Arduino script that uses the `DigiKeyboard` library to simulate keyboard inputs to a computer. The program opens Notepad by pressing the **Windows + R** key combination and then types a message into it.
+# ⚡ DigiKeyboard Notepad Launcher  
+### _USB HID Automation Script (Educational PoC)_
 
-## Project Contents
+A lightweight PoC demonstrating how a USB HID device (such as **Digispark**) can automate keystrokes, execute commands, and interact with the operating system without user input.
 
-- **Main Code**: Contains commands to open Notepad and send a message.
+<br>
 
-## Prerequisites
+<img src="https://img.shields.io/badge/Platform-DigiSpark-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Type-USB_HID_Attack-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Use-EDUCATIONAL_ONLY-red?style=for-the-badge">
+<img src="https://img.shields.io/badge/Language-Arduino-green?style=for-the-badge">
 
-To use this project, you will need:
+<br>
+</div>
 
-- A compatible Arduino device (such as **Digispark** or **USB Rubber Ducky**).
-- The `DigiKeyboard` library, which should be installed via the Arduino Library Manager.
+---
 
-## Installation
+## 📝 Overview
 
-1. Install the `DigiKeyboard` library from the Arduino Library Manager.
-2. Copy the code into a new file in the Arduino IDE.
-3. Connect your Arduino device to your computer.
-4. Upload the code to the device.
+This project uses the **DigiKeyboard** library to simulate keyboard input on a Windows machine.  
+When plugged in, the device:
 
-## Usage
+1. Opens the Windows **Run** dialog (`Win + R`)
+2. Launches **Notepad**
+3. Types the message:
 
-Once the code is uploaded, plug the Arduino device into a USB port on the target computer. The device will automatically execute the following actions:
+```
 
-1. Open the **Run** dialog by simulating the **Windows + R** key press.
-2. Type "notepad" and hit **Enter** to open Notepad.
-3. Type the message "You Have Been Hacked By VN !" in the Notepad window.
+You Have Been Hacked By VN !
 
-## Disclaimer
+```
 
-This script is intended for educational purposes and should be used responsibly. Misuse of this code for unauthorized access or malicious intent is illegal and unethical.
+This example demonstrates how HID-based devices can automate tasks and why USB security awareness is important.
+
+---
+
+## 📂 Project Contents
+
+- **Main Script** – Contains the DigiKeyboard commands  
+- **PoC Demo** – Simulated keystrokes for Notepad automation  
+- **Educational Reference** – Demonstrates real-world USB HID attack behavior  
+
+---
+
+## 🔧 Requirements
+
+You will need:
+
+- ✔️ A **Digispark** (or similar USB HID attack device)
+- ✔️ Arduino IDE installed
+- ✔️ **DigiKeyboard** library  
+  (`Tools → Manage Libraries → Search "DigiKeyboard"`)
+
+---
+
+## 🚀 Installation & Setup
+
+1. Install the **DigiKeyboard** library from Arduino Library Manager  
+2. Create a new `.ino` file in Arduino IDE  
+3. Paste the provided code into your sketch  
+4. Connect your Digispark board  
+5. Upload the script (the board resets after upload)
+
+---
+
+## ▶️ How It Works (Execution Flow)
+
+Once the device is plugged into a computer, it will automatically:
+
+### 1️⃣ Trigger the Run Dialog
+Simulates the keystroke:  
+`Windows Key + R`
+
+### 2️⃣ Launch Notepad
+Types:
+
+```
+
+notepad
+
+```
+
+then presses **Enter**
+
+### 3️⃣ Send the Message
+Types into Notepad:
+
+```
+
+You Have Been Hacked By VN !
+
+```
+
+⚡ **No drivers needed** — Windows automatically detects DigiSpark as a keyboard.
+
+---
+
+## ⚠️ Ethical Disclaimer
+
+This project is for:
+
+- 🧪 Cybersecurity education  
+- 🛡️ Awareness training  
+- 🎓 Classroom demonstrations  
+- 🔍 USB HID security research  
+
+**Do NOT use on any system without explicit permission.**  
+Unauthorized deployment is illegal, unethical, and punishable by law.  
+You are responsible for all actions performed using this code.
+
+---
+
+<div align="center">
+
+### 🤝 Created for Ethical Hacking & Learning  
+**Stay Safe • Stay Ethical • Stay Smart 🔐**
+
+</div>
